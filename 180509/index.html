@@ -38,10 +38,14 @@
             <a class="nav-link disabled" href="#">ギャラリー</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔍検索</button>
+        <form class="form-inline my-2 my-lg-0" method="GET" action="http://www.google.co.jp/search">
+          <input type="text" name="q" class="text " value="" placeholder="Google検索">
+          <input type="submit" name="btnG" class="button" value="検索">
+          <input type="hidden" name="hl" value="ja">
+          <input type="hidden" name="ie" value="UTF">
+          <input type="hidden" name="oe" value="UTF">
         </form>
+
       </div>
     </nav>
 
@@ -93,9 +97,6 @@
       <!--グッドとバッド-->
       <button type="button " class="btn btn-primary " >👍</button>
       <button type="button" class="btn btn-secondary">👎</button>
-
-
-
     </div>
 
     <footer class="footer">
