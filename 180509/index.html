@@ -9,19 +9,22 @@
 
 
     <!--上のバナー -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #0B243B">
+      <a class="navbar-brand" href="#">
+        <img src="image/aikon.jpg" width="30" height="30" alt="">
+      </a>
+      <a class="navbar-brand" href="#">ホーム</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">ホーム <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">紹介 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">紹介</a>
+            <a class="nav-link" href="#">ギャラリー</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -29,22 +32,27 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">中学</a>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">高校</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">大学</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">ギャラリー</a>
-          </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0" method="GET" action="http://www.google.co.jp/search">
-          <input type="text" name="q" class="text " value="" placeholder="Google検索">
-          <input type="submit" name="btnG" class="button" value="検索">
-          <input type="hidden" name="hl" value="ja">
-          <input type="hidden" name="ie" value="UTF">
-          <input type="hidden" name="oe" value="UTF">
-        </form>
+
+
+            <form class="form-inline my-2 my-lg-0" method="GET" action="http://www.google.co.jp/search">
+            <input type="text" name="q" class="form-control mr-sm-2 " value="" placeholder="Google検索">
+            <input type="submit" name="btnG" class="form-control mr-sm-2" value="検索">
+            <input type="hidden" name="hl" value="ja">
+            <input type="hidden" name="ie" value="UTF">
+            <input type="hidden" name="oe" value="UTF">
+            </form>
+
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="サイト内検索" aria-label="Search">
+              <button class="form-control " type="submit">検索</button>
+            </form>
 
       </div>
     </nav>
@@ -95,10 +103,12 @@
     </div>
 
       <!--グッドとバッド-->
-      <button type="button " class="btn btn-primary " >👍</button>
+      <div align="right">
+      <button type="button" class="btn btn-primary " >👍</button>
       <button type="button" class="btn btn-secondary">👎</button>
-    </div>
+      </div>
 
+    </div>
     <footer class="footer">
       <div class="container">
         <p class="text-muted">
