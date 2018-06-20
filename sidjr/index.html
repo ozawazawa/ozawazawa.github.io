@@ -17,27 +17,26 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #0B243B">
-      <a class="navbar-brand" href="#">ホーム</a>
+      <a class="navbar-brand" href="#">トップページ</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              予定・大会結果
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">予定</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">大会結果</a>
+            </div>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">メンバー紹介</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              大会結果
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">中学</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">高校</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">大学</a>
-            </div>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="#">アルバム</a>
           </li>
@@ -57,11 +56,33 @@
 
   <div class="row">
     <div class="col-3 border">
-      ああああああああ
+      <ul>
+        <li>トップページ</li>
+        <li>予定・大会結果</li>
+        <li>メンバー紹介</li>
+        <li>アルバム</li>
+        <li>アクセス</li>
+        <li>リンク</li>
+        <li>メンバー専用</li>
+      </ul>
     </div>
 
     <div class="col-9 border">
-      あああああああ
+      <div class="col-12">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/Ky_w9Ju0kKB8EBn1529486171_1529486308.jpg" alt="First slide"  >
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/思い出写真_180302_0022.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/思い出写真_180302_0027.jpg" alt="Third slide" >
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
 
