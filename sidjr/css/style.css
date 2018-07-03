@@ -5,3 +5,18 @@
   top: 10px;
   z-index: 100;
 }
+
+.blink{
+  animation: 1s linear infinite blink_effect;
+}
+@keyframes blink_effect {
+  0%{
+    visibility: hidden;
+  }
+  50%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
