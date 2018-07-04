@@ -11,6 +11,7 @@
 }
 
 .blink{
+  color: red;
   animation: 1s linear infinite blink_effect;
 }
 @keyframes blink_effect {
