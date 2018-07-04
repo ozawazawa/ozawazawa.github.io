@@ -6,6 +6,10 @@
   z-index: 100;
 }
 
+.sidemenu{
+  margin: 20px;
+}
+
 .blink{
   animation: 1s linear infinite blink_effect;
 }
@@ -20,3 +24,4 @@
     visibility: visible;
   }
 }
+
