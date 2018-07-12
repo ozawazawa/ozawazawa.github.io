@@ -64,3 +64,21 @@ ul.cp_list li:after {
   justify-content: center;
 }
 
+table td{
+  padding : 10px 10px;
+}
+
+.taitol{
+  color:white; /*文字色*/
+  background-color: #ee0800;
+}
+
+.dansi{
+  color:white; /*文字色*/
+  background-color: #0097ff;
+}
+
+.zyosi{
+  color: white;
+  background: #ff539e;
+}
