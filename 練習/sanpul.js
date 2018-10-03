@@ -17,3 +17,7 @@ console.log(variableA);
 //変数に別の変数の値を代入することもできる
 variableA = variableB;
 console.log(variableB);
+
+console.log(-123,0,-321,0xff);
+console.log(-0.1,.123,-3,.0);
+``
