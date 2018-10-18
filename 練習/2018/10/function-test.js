@@ -1,10 +1,14 @@
-function 太郎() {
-  console.log(1+2);
+function logHello(){
+  console.log("どうだ");
 }
 
-
-let taro = {
-  height: "100px",
-  width: "200px",
-  name: "たろう"
+function hogehoge() {
+  console.log("ほげほげ");
 }
+
+function 関数名1(仮引数1) {
+  console.log('仮引数の中身は ${仮引数1} です');
+}
+
+関数名1("一回目");
+関数名1("二回目");

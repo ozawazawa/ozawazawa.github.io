@@ -1,7 +1,5 @@
 function showModal() {
  document.querySelector("#modal").innerHTML ="押された！！"
-} {
-
 }
 
 function changeRed() {
