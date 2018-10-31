@@ -26,3 +26,22 @@ function  doLoop2() {
    }
   answer.innerHTML = i;
 }
+
+function doFizzBuzz() {
+  let answer = document.querySelector("#answer");
+  let i = 1;
+  while (i <=100){
+    if( i % 3 ===0 && i % 5 ===0){
+      answer.innerHTML +=`FizzBuzz<br>`;
+    }else if(i%3===0){
+      answer.innerHTML+=`Fizz<br>`;
+    }else if(i % 5 ===0){
+      answer.innerHTML +=`Buzz<br>`;
+    }else{
+      answer.innerHTML +=`${i}<br>`;
+    }
+
+    i++;
+  }
+
+}
