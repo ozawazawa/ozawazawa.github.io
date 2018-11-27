@@ -51,7 +51,6 @@ function tarou() {
       let taroutweet = function (tweets) {
         if(tweets.name=="太郎"){
         tarouHTML += `<li><img src="${tweets.avatar}" height="50" width="50">  <b>${tweets.name}</b> ${tweets.message} <i>${tweets.tweetedAt} </i> </li>`
-
         }
       }
       tweets.forEach(taroutweet);
