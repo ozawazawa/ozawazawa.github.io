@@ -1,10 +1,18 @@
+let tweetsHTML = "<ul>";
+let appendTweet=  function (tweets) {
+  tweetsHTML +=`<li><img src="${tweets.avatar}" height="100" width="100"> <b>${tweets.name}</b> ${tweets.message} <i>${tweets.tweetedAt} </i></il>`
+};
+
+tweets.forEach(appendTweet);
+tweetsHTML += "</ul>";
+document.querySelector("#answer").innerHTML = tweetsHTML;
 
 
 function zenbu() {
   let zenbuHTML = "<ul>";
 
   let zenbutweet = function(tweets){
-    zenbuHTML += `<li><b>${tweets.name}</b> ${tweets.message} <i>${tweets.tweetedAt} ${tweets.avatar}</i></il>`
+    zenbuHTML += `<li><img src="${tweets.avatar}" height="100" width="100"> <b>${tweets.name}</b> ${tweets.message} <i>${tweets.tweetedAt} </i></il>`
   }
   tweets.forEach(zenbutweet);
 
@@ -17,7 +25,7 @@ function saburou() {
   let saburouHTML = "<ul>";
 
   let saburoutweet = function (tweets) {
-    saburouHTML += `<li><b>${tweets.name}</b> ${tweets.message} <i>${tweets.tweetedAt} ${tweets.avatar}</i> </li>`
+    saburouHTML += `<li><img src="${tweets.avatar}" height="100" width="100"><b>${tweets.name}</b> ${tweets.message} <i>${tweets.tweetedAt} </i> </li>`
   }
   tweets.forEach(saburoutweet);
 
@@ -29,7 +37,7 @@ function zirou() {
   let zirouHTML = "<ul>";
 
   let ziroutweet = function (tweets) {
-    zirouHTML += `<li><b>${tweets.name}</b> ${tweets.message} <i>${tweets.tweetedAt} ${tweets.avatar}</i> </li>`
+    zirouHTML += `<li><img src="${tweets.avatar}" height="100" width="100"><b>${tweets.name}</b> ${tweets.message} <i>${tweets.tweetedAt}</i> </li>`
   }
   tweets.forEach(ziroutweet);
 
@@ -41,7 +49,7 @@ function tarou() {
   let tarouHTML = "<ul>";
 
   let taroutweet = function (tweets) {
-    tarouHTML += `<li><b>${tweets.name}</b> ${tweets.message} <i>${tweets.tweetedAt} <img src="${tweets.avatar} height="100" width="100"  ></i> </li>`
+    tarouHTML += `<li><img src="${tweets.avatar}" height="100" width="100">  <b>${tweets.name}</b> ${tweets.message} <i>${tweets.tweetedAt} </i> </li>`
   }
   tweets.forEach(taroutweet);
 
