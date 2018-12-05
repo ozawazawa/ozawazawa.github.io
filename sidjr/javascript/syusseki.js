@@ -10,21 +10,43 @@ fetch("https://sheets.googleapis.com/v4/spreadsheets/1tdulfG7Vu0W2eADB_En5dlq1PT
             html += `<hr width="100%" >
         <table class="table table-bordered">
           <thead>
-            <tr>
-              <th scope="col" style="width:20%">${row[4]}</th>
-              <th scope="col" style="width:40%">${row[1]}</th>
-              <th scope="col" style="width:10%">${row[2]}</th>
-              <th scope="col" style="width:30%">${row[3]}</th>
+             <tr>
+              <th scope="col" style="width:20%">日程</th>
+              <th scope="col" style="width:40%">名前</th>
+              <th scope="col" style="width:10%">出欠</th>
+              <th scope="col" style="width:30%">到着予想時間</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td>${row[4]}</td>
+              <td>${row[1]}</td>
+              <td>${row[2]}</td>
+              <td>${row[3]}</td>
+            </tr>
+          </tbody>
         </table>`;
-          }
+      }
       );
       html +="</ul>";
       document.querySelector("#result").innerHTML =html;
     }
-)
+);
 
 
 
 
+
+function syusseki() {
+  let syussekiHTML = "<ul>";
+  let sanka = function (row) {
+    if (row[2] == "出席") {
+      syussekiHTML += `<li>${row[1]}<b>${row[2]}</b> ${row[3]} <i>${row[4]} </i> </li>`
+      console.log(syussekiHTML);
+    }
+  }
+  .forEach(sanka);
+
+  syussekiHTML +="</ul>"
+  ;document.querySelector("#result").innerHTML =syussekiHTML;
+}

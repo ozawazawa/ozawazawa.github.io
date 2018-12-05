@@ -33,8 +33,10 @@ function syusseki() {
       syussekiHTML += `<li>${row[1]}<b>${row[2]}</b> ${row[3]} <i>${row[4]} </i> </li>`
       console.log(syussekiHTML);}
   }
-  row[2].forEach(syusseki);
+  .forEach(syusseki);
 
   syussekiHTML +="</ul>"
   ;document.querySelector("#result").innerHTML =syussekiHTML;
 }
+
+
