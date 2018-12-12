@@ -93,4 +93,6 @@ table td{
 div.example {
   height: 400px;
   overflow-y: scroll;
+  margin-left: -50px;
+  padding       : 10px;
 }
