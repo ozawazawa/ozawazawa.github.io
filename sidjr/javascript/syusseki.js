@@ -38,7 +38,7 @@ fetch("https://sheets.googleapis.com/v4/spreadsheets/1tdulfG7Vu0W2eADB_En5dlq1PT
 
 
 function syusseki() {
-  fetch("https://sheets.googleapis.com/v4/spreadsheets/1tdulfG7Vu0W2eADB_En5dlq1PTts1a9AMbh9XxviYNo/values/1月出欠確認?key=AIzaSyB5AJs2hAiY6tjNxyH8m6H69eR0S50Fb5g").then(
+  fetch("https://sheets.googleapis.com/v4/spreadsheets/1tdulfG7Vu0W2eADB_En5dlq1PTts1a9AMbh9XxviYNo/values/12月出欠確認?key=AIzaSyB5AJs2hAiY6tjNxyH8m6H69eR0S50Fb5g").then(
       response => {
         return response.json();
       }
@@ -47,7 +47,8 @@ function syusseki() {
         console.log(json);
         let html = "<ul>";
         json.values.forEach(row => {
-              html += `<hr width="100%" >
+              if (row[2] == "出席") {
+                html += `<hr width="100%" >
         <table class="table table-bordered">
           <thead>
              <tr>
@@ -59,13 +60,14 @@ function syusseki() {
           </thead>
           <tbody>
             <tr>
-              <td>${row[2]}</td>
-              <td>${row[1]}</td>
-              <td>${row[3]}</td>
               <td>${row[4]}</td>
+              <td>${row[1]}</td>
+              <td>${row[2]}</td>
+              <td>${row[3]}</td>
             </tr>
           </tbody>
         </table>`;
+              }
             }
         );
         html += "</ul>";
