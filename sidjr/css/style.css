@@ -90,9 +90,14 @@ table td{
   padding-top: 5px;
 }
 
-div.example {
-  height: 400px;
-  overflow-y: scroll;
-  margin-left: -50px;
-  padding       : 10px;
+
+
+@media screen and (min-width: 640px) {
+  div.example {
+    height: 400px;
+    overflow-y: scroll;
+    margin-left: -50px;
+    padding       : 10px;
+  }
 }
+
