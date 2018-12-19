@@ -92,7 +92,7 @@ table td{
 
 
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 576px) {
   div.example {
     height: 400px;
     overflow-y: scroll;
