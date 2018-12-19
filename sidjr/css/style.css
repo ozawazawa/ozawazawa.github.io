@@ -99,5 +99,8 @@ table td{
     margin-left: -50px;
     padding       : 10px;
   }
+  iframe.map{
+    width: 600px;
+    height: 450px;
+  }
 }
-
