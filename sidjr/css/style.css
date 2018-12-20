@@ -109,4 +109,11 @@ table td{
   }
 }
 
+@media screen and( max-width:575px) {
+  div.example {
+    margin-left: -50px;
+    padding       : 10px;
+  }
+}
+
 
