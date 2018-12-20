@@ -103,4 +103,8 @@ table td{
     width: 600px;
     height: 450px;
   }
+  iframe.form{
+    width: 700px;
+    height: 520px;
+  }
 }
