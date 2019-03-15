@@ -5,6 +5,13 @@
   z-index: 100;
 }
 
+.menu-2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .sidemenu{
   /*margin: 20px;*/
 }
@@ -126,4 +133,8 @@ table td{
 
 body {
   position: relative;
+}
+
+p{
+  font-size: 17px
 }
