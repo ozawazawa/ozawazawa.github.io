@@ -68,6 +68,10 @@ table td{
   padding : 10px 10px;
 }
 
+.table th {
+  vertical-align: inherit;
+}
+
 .taitol{
   color:white; /*文字色*/
   background-color: #ee0800;
@@ -118,4 +122,8 @@ table td{
 
 .ul{
   padding: 1px;
+}
+
+body {
+  position: relative;
 }

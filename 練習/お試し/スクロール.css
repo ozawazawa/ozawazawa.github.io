@@ -1,6 +1,17 @@
-div.example {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  overflow: scroll;
+/*div.example {*/
+   /*width: 100px;*/
+   /*height: 100px;*/
+   /*background-color: red;*/
+   /*overflow: scroll;*/
+ /*}*/
+
+body {
+  position: relative;
+}
+
+.menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
 }
